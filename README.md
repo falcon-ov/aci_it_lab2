@@ -63,6 +63,7 @@ chmod +x cli_assistant.sh
 
 ![img](/images/img_3.png)
 
+Код приложен в репозитории `cli_assistant.sh`
 
 # Задание 2
 
@@ -94,7 +95,6 @@ $ ./backup_rot.sh
 $ ./backup_rot.sh /var/www /mnt/storage/backups 5
 ```
 
-
 ### Требования
 - Защита от пробелов в путях (кавычки при `tar`, `mv`, `rm`).
 - Проверка доступности записи в каталог бэкапов.
@@ -105,6 +105,31 @@ $ ./backup_rot.sh /var/www /mnt/storage/backups 5
 2025-08-23T14:45:12 SRC=/var/www DST=/mnt/storage/backups \ FILE=backup_www_20250823_144512.tar.gz SIZE=128M STATUS=0`
 ```
 
+### Выполнение
+
+Проверяю, что создался каталог ~/backups
+Архив появился с правильным именем.
+В backup.log есть запись со STATUS=0.
+
+![img](/images/img_4.png)
+
+![img](/images/img_5.png)
+
+![img](/images/img_6.png)
+
+Проверяю, что архив создаётся именно в `/home/socolov/Desktop/lab/`
+
+![img](/images/img_7.png)
+
+Проверяю на ошибки
+
+![img](/images/img_8.png)
+
+![img](/images/img_9.png)
+
+![img](/images/img_10.png)
+
+Код приложен в репозитории `backup_rot.sh`
 
 # Задание 3
 ## «Мониторинг дискового пространства»
@@ -138,3 +163,9 @@ $ ./disk_monitor.sh / 75
 Использовано: 42%
 Статус: OK
 ```
+
+### Выполнение
+
+Код приложен в репозитории `disk_monitor.sh`
+
+![img](/images/img_11.png)
